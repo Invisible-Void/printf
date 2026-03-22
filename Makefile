@@ -10,7 +10,7 @@ TARGETDIR=build/
 TARGET=$(TARGETDIR)libprintf.a
 
 
-$(TARGET): $(OBJDIR)printf.o $(OBJDIR)syscalls.o | $(TARGETDIR)
+$(TARGET): $(OBJDIR)printf.o $(OBJDIR)syscalls.o $(OBJDIR)utils.o | $(TARGETDIR)
 	ar rcs $@ $^
 
 
